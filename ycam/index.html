@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Yo-kai Cam</title>
+<style>
+input, select {
+	padding: 10px;
+	margin: 3px;
+}
+table, th, td {
+	border: 1px solid black;
+	table-layout: fixed;
+}
+
+.one {
+	background-color: green;
+	color: white;
+}
+.zero {
+	background-color: red;
+	color: white;
+}
+</style>
+
+	</head>
+
+	<body>
+		<h1>Yo-kai Cam</h1>
+		<p>Enter a Yo-kai OR specify features</p>
+		<table>
+			<tr>
+				<th>
+					Game
+				</th>
+				<th>
+					Yo-kai
+				</th>
+				<th>
+					Features (Click to toggle)
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<select id="game" onchange="gameChange()">
+						<option value="0">Yo-kai Watch 1</option>
+						<option value="1">Yo-kai Watch 2</option>
+					</select>
+				</td>
+				<td>
+					<input list="yks0" placeholder="Yo-kai Name" id="yk" oninput="calculate(true)" />
+				</td>
+				<td>
+					<input id="fb0" type="button" class="zero" onclick="fb(0)" />
+					<br />
+					<input id="fb1" type="button" class="zero" onclick="fb(1)" />
+					<br />
+					<input id="fb2" type="button" class="zero" onclick="fb(2)" />
+					<br />
+					<input id="fb3" type="button" class="zero" onclick="fb(3)" />
+					<br />
+					<input id="fb4" type="button" class="zero" onclick="fb(4)" />
+					<br />
+					<input id="fb5" type="button" class="zero" onclick="fb(5)" />
+					<br />
+					<input id="fb6" type="button" class="zero" onclick="fb(6)" />
+					<br />
+					<input id="fb7" type="button" class="zero" onclick="fb(7)" />
+					<br />
+					<input id="fb8" type="button" class="zero" onclick="fb(8)" />
+				</td>
+			</tr>
+
+		</table>
+
+		<h2 id="resTxt"></h2>
+		<table id="result">
+		</table>
+
+		<script src="calc.js"></script>
+
+	</body>
+
+
+
+
+
+
+
+
+
+</html>
