@@ -2344,7 +2344,7 @@ function calculate(enteredYokai) {
 			title.innerHTML = "Face " + i;
 			titleRow.append(title);
 
-			dataRow.append(createFeatureCol(toBase4(id)))
+			dataRow.append(createFeatureCol(toBase4(id).reverse()))
 
 			i++;
 		}

@@ -59,8 +59,11 @@ There are 5 used functions.
 | 5           | Takes a value from the face scanner (probably gender?).                     | -                                                                                                            |
 
 ## Face ID
-Using the face features the game then calculates a Face ID as follows:  
-For each face feature the game creates a digit between 0 and 1. One if the face feature value is greater than `Threshold1` and zero if it's smaller than `Threshold1`.
+Already before taking the picture, the game records face feature values and saves them in a ring buffer that can hold 16 sets of face feature values.
+If there are less than 4 sets of face feature values in the buffer, the camera shows "Wait".
+If the picture is taken, the game calculates the average of all sets in the ring buffer and uses that to calculate the Face ID:
+
+For each face feature the game creates a digit between 0 and 1. One if the average value is greater than `Threshold1` and zero if it's smaller than `Threshold1`.
 These digits are then packed into a base-4 number, with the first feature being the most significant digit. This number is the Face ID, which is used to look up the Yo-kai from the CfgBin file.
 
 
