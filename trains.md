@@ -121,6 +121,6 @@ If the `StationType` is 3, the arriving trains are saved and no train can arrive
 Hexpress Trains (`Line`=4, `TrainType`=2) can only arrive at stations with `StationType`=3 and Whimsy Valley.
 
 ### Happy-Go-Lucky Express
-Each time the player enters a station there is a 10% chance that a bit flag (`0x33CEE5A0`) is set to 1 (otherwise it's set to 0). If this flag is set to 1, every arriving train has a 10% chance to be
+Every time the player enters any station there is a 10% chance that a bit flag (`0x33CEE5A0`) is set to 1 and a 90% chance it's set to 0. If this flag is set to 1, every arriving train has a 10% chance to be
 the Happy-Go-Lucky Express.
 
