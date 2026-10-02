@@ -14,6 +14,7 @@ The game also puts a "A strange Yo-kai has wandered into your city!"-message int
 * The game just received a Pandanoko and it was not already forwarded to another system
 * The BitFlag `0xC27065E9` (`passcomm_ex_send`) is set to 1
   * This BitFlag has a 1% chance to be set to 1 at the creation of the save file and is set to 0 after a Pandanoko was sent.
+  * It can also be set to 1, by scanning a "P1ZZZZ"-QR-Code. ([this one](https://raw.githubusercontent.com/swopis/YW-Mechanics/refs/heads/main/img/qrcode_panda1.png) or [this one](https://raw.githubusercontent.com/swopis/YW-Mechanics/refs/heads/main/img/qrcode_panda2.png))
 
 If the game receives a Pandanoko the BitFlag `0x3CDB0D89` (`passcomm_ex_recv`) is set to 1, making Pandanoko appear in the Wayfarer Manor.
 
